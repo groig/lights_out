@@ -1,4 +1,8 @@
+<div class="row">
+  <div class="column column-50 column-offset-25">
 <h3>Provincia actual: <%= @current_province_title %> <%= @current_province_count %> reportes</h3>
+  </div>
+</div>
 <div class="row">
   
 <!-- (c) ammap.com | SVG map of Cuba - Low -->
@@ -60,7 +64,7 @@
 
 <div class="row">
   <div class="column column-offset-25">
-    <button phx-click="inc" phx-throttle="500">se fue</button>
+    <button phx-click="inc" phx-throttle="500" style="background-color: #000000">se fue</button>
     <button phx-click="dec" phx-throttle="500">vino</button>
   </div>
 </div>
