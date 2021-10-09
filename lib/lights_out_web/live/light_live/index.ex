@@ -32,8 +32,7 @@ defmodule LightsOutWeb.LightLive.Index do
   end
 
   @impl true
-  def handle_event("set_current_province", %{"provincias" => province_id}, socket) do
-    # regular validations for current step
+  def handle_event("set_current_province", %{"province_id" => province_id}, socket) do
     current_province = Map.get(socket.assigns.provinces, province_id)
 
     socket =
