@@ -10,8 +10,7 @@ import Config
 # which you should run after static files are built and
 # before starting your production server.
 config :lights_out, LightsOutWeb.Endpoint,
-  url: [scheme: "https", host: "lights-out-cu.herokuapp.com", port: 443],
-  force_ssl: [rewrite_on: [:x_forwarded_proto]],
+  url: [host: "roig.is-a.dev", path: "/lights", port: 4002],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
